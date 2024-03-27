@@ -1,0 +1,234 @@
+https://ubuntu.com/server/docs/containers-lxd
+https://ubuntu.com/blog/lxd-in-4-easy-stepsa
+
+INSTALLING LXC
+
+apt update
+
+apt install snapd 
+snap install lxd 
+snap install lxd-client
+
+sudo usermod -a G lxd $USER  
+
+export PATH=$PATH:/usr/local/bin  
+
+
+lxc launch ubuntu:18.04 BionicModulation
+
+
+lxc exec BionicModulation -- bash
+apt update
+
+Installing pqcrypto : 
+
+
+apt-get install python3-pip wget
+
+apt-get install python3-pip
+
+pip3 install progressbar
+
+pip3 uninstall numpy
+
+pip3 install "numpy<1.20.0"
+
+
+apt install python3-distutils
+
+# pip3 install click
+# https://segmentfault.com/a/1190000040609361
+pip show click
+pip3 install "click>7.1.0"
+
+
+pip3 install progress
+
+pip3 install sympy
+
+apt-get install git
+
+
+apt-get install unzip
+
+pip3 install Exit
+
+sudo apt install -y dh-python python3-click python3-progress  python3-numpy python3-matplotlib python3-networkx   python3-stdeb python3-setuptools-scm python3-setuptools python3-cpuinfo
+pip3 install dh click numpy progress matplotlib networkx stdeb setuptools-scm setuptools
+
+sudo apt-get install python-all
+
+
+git clone https://github.com/JJChiDguez/sibc
+
+cd sibc
+
+python3 setup.py bdist_deb
+
+sudo python3 setup.py install
+
+python3 sibc csidh-bench
+
+python3 sibc -p p512 -f hvelu -a csidh -s df -e 10 csidh-main
+
+sibc -p p512 -f hvelu -a csidh -s df -e 10 csidh-main
+
+
+
+
+# Testing : 
+sibc -p p512 -f hvelu -a csidh -s df -e 10 csidh-main
+
+wget https://raw.githubusercontent.com/SitrakaResearchAndPOC/Cryptodome/main/real_csidh.py
+
+python3 real_csidh.py 
+
+
+
+
+
+Launching separate mode for csidh sibc
+
+wget https://raw.githubusercontent.com/SitrakaResearchAndPOC/Cryptodome/main/keygen_csidh_sibc.py
+
+wget https://raw.githubusercontent.com/SitrakaResearchAndPOC/Cryptodome/main/shared_csidh_sibc.py
+
+rm -rf *.pub *.priv *.key
+
+python3 keygen_csidh_sibc.py -n alice
+
+ls
+
+python3 keygen_csidh_sibc.py -n bob
+
+ls
+
+python3 shared_csidh_sibc.py -p alice.pub -s bob.priv -k key1.key
+
+python3 shared_csidh_sibc.py -p bob.pub -s alice.priv -k key2.key
+
+
+
+git clone https://github.com/SitrakaResearchAndPOC/Python_PQAES_FO.git
+
+cd Python_PQAES_FO/
+
+unzip Python-PQAES.zip 
+
+cd Python-PQAES-CSIDH/
+
+
+python3 AES.py -e test.txt -c 128
+
+python3 AES.py -d test.txt.aes -c 128
+
+Name the decrypted file as test_dec.txt
+
+
+
+
+tail -f test_dec.txt
+
+python3 FO.py 
+
+
+python3 FO.py -e test.txt -a sha256 -k bob.priv 
+
+python3 FO.py -d test.txt.fo -a sha256 -k bob.priv 
+
+tail f test_fo.txt 
+
+
+
+python3 PQAES.py
+
+
+
+
+
+# Installing firefox for testing gui
+   65  apt-get install nano 
+   66  nano .gui.txt
+   		find contents of.gui.txt at the github hackrf_jam_lxd
+   67  lxc profile create gui
+   68  lxc profile edit gui < .gui.txt
+   69  rm -rf gui.txt 
+   70  lxc profile add BionicModulation gui
+lxc config set  BionicModulation security.privileged=true
+
+lxc stop BionicModulation
+
+lxc start BionicModulation
+
+lxc exec BionicModulation -- bash
+
+apt update
+
+apt-get install firefox
+
+
+RQ : xhost +x local:
+https://bbs.archlinux.org/viewtopic.php?id=221449
+https://bbs.archlinux.org/viewtopic.php?id=272491
+https://bbs.archlinux.org/viewtopic.php?id=270585
+https://bbs.archlinux.org/viewtopic.php?id=281572
+https://bbs.archlinux.org/viewtopic.php?id=288581
+ON LOCAL : 
+rm -rf /tmp/.X11-unix/X0
+
+reboot LOCAL MACHINE
+chmod 777 /tmp/.X11-unix/X0
+
+lxc stop BionicModulation
+
+lxc start BionicModulation
+ 
+xhost +local:
+non-network local connections being added to access control list
+
+
+pgrep -a X
+
+echo $DISPLAY
+
+export DISPLAY=$DISPLAY
+
+lxc exec BionicModulation -- firefox
+
+
+
+# Installing modulation dependancies : 
+apt-get install hackrf gnuradio rtl-sdr ffmpeg vlc gr-osmosdr
+
+
+
+Emetteur : 
+hackrf_info version: unknown
+libhackrf version: unknown (0.5)
+Found HackRF
+Index: 0
+Serial number: 0000000000000000629461dc23815153
+Board ID Number: 2 (HackRF One)
+Firmware Version: 2023.01.1 (API:1.07)
+Part ID Number: 0xa000cb3c 0x0066476b
+
+
+Receiver : 
+
+libhackrf version: unknown (0.5)
+Found HackRF
+Index: 0
+Serial number: 0000000000000000f75461dc297ba4c3
+Board ID Number: 4 (Unknown Board ID)
+Firmware Version: 2023.01.1 (API:1.07)
+Part ID Number: 0xa000cb3c 0x0066475e
+
+
+Serial number: 0000000000000000355867dc324d7c0b
+Board ID Number: 4 (Unknown Board ID)
+Firmware Version: 2023.01.1 (API:1.07)
+Part ID Number: 0xa000cb3c 0x0061476e
+
+cl
+
+
