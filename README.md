@@ -178,10 +178,14 @@ apt-get install git unzip
 git clone https://github.com/SitrakaResearchAndPOC/BionicModulation
 ```
 
-
 # INSTALLING OTHER MODULATION
-
-
+```
+mkdir FM-Modulation
+```
+```
+cd FM-Modulation
+```
+Downloads as on the [link](https://github.com/SitrakaResearchAndPOC/FM_Transmitter/tree/main) </br>
 
 # INSTALLING CIPHERING AES AND QUANTUM SAFE AES
 ```
