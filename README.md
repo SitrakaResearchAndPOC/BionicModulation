@@ -157,10 +157,14 @@ name: gui
 ```
 * remak all step on the PROBLEM OF DISPLAY
 * if problem still persists ; change by other number and look at : </br> [link1](https://bbs.archlinux.org/viewtopic.php?id=221449) </br>[link2](https://bbs.archlinux.org/viewtopic.php?id=272491)  </br> [link3](https://bbs.archlinux.org/viewtopic.php?id=270585) </br> [link4](https://bbs.archlinux.org/viewtopic.php?id=281572) </br> [link5](https://bbs.archlinux.org/viewtopic.php?id=288581) </br>
+```
+lxc exec BionicModulation -- firefox
+```
 
-# Installing modulation dependancies : 
+# INSTALLING DEPENDANCIES MODULATIONS
+```
 apt-get install hackrf gnuradio rtl-sdr ffmpeg vlc gr-osmosdr
-
+```
 
 # INSTALLING MODULATION FM
 
