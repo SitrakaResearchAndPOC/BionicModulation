@@ -82,20 +82,17 @@ lxc profile edit gui < .gui.txt
 rm .gui.txt
 ```
 ```
-lxc profile add HackrfJAM gui
+lxc profile add  BionicModulation gui
 ```
 ```
-lxc config set HackrfJAM security.privileged=true
+lxc config set  BionicModulation security.privileged=true
 ```
 ```
-lxc start HackrfJAM
-```
-```
-lxc exec HackrfJAM -- bash
+lxc start  BionicModulation
 ```
 Testing GUI Firefox
 ```
-firefox
+lxc exec  BionicModulation -- firefox
 ```
 ## Problem of display for Quick install
 Problem display at [display](https://bbs.archlinux.org/viewtopic.php?id=221449) or [pdf_display](https://github.com/SitrakaResearchAndPOC/HackrfJAM_LXD/blob/main/How%20to%20resolve%20%E2%80%9CNo%20protocol%20specified%20Unable%20to%20init%20server__%20%5BSolved%5D%20_%20Newbie%20Corner%20_%20Arch%20Linux%20Forums.pdf) </br>
@@ -109,10 +106,10 @@ reboot
 ```
 * please reboot the container images : 
 ```
-lxc stop  HackrfJAM
+lxc stop  BionicModulation
 ```
 ```
-lxc start HackrfJAM
+lxc start  BionicModulation
 ```
 * listing the profile
 ```
@@ -120,7 +117,7 @@ lxc profile list
 ```
 * adding the profile
 ```
-lxc profile add HackrfJAM gui
+lxc profile add  BionicModulation gui
 ```
 * Please verify if there are two x0 and choose following ; 
 ```
@@ -129,6 +126,7 @@ chmod +x /tmp/.X11-unix/X0
 ```
 xhost +local:
 ```
+non-network local connections being added to access control list
 ```
 pgrep -a X
 ```
@@ -158,47 +156,7 @@ devices:
 name: gui
 ```
 * remak all step on the PROBLEM OF DISPLAY
-* if problem still persists ; change by other number and look at : </br> [link1](https://bbs.archlinux.org/viewtopic.php?id=221449) [link2](https://bbs.archlinux.org/viewtopic.php?id=272491)  </br> [link3](https://bbs.archlinux.org/viewtopic.php?id=270585) </br> [link4](https://bbs.archlinux.org/viewtopic.php?id=281572) </br> [link5](https://bbs.archlinux.org/viewtopic.php?id=288581) </br>
-
-
-lxc profile create gui
-   68  lxc profile edit gui < .gui.txt
-   69  rm -rf gui.txt 
-   70  lxc profile add BionicModulation gui
-lxc config set  BionicModulation security.privileged=true
-
-lxc stop BionicModulation
-
-lxc start BionicModulation
-
-lxc exec BionicModulation -- bash
-
-
-
-RQ : xhost +x local:
-ON LOCAL : 
-rm -rf /tmp/.X11-unix/X0
-
-reboot LOCAL MACHINE
-chmod 777 /tmp/.X11-unix/X0
-
-lxc stop BionicModulation
-
-lxc start BionicModulation
- 
-xhost +local:
-non-network local connections being added to access control list
-
-
-pgrep -a X
-
-echo $DISPLAY
-
-export DISPLAY=$DISPLAY
-
-lxc exec BionicModulation -- firefox
-
-
+* if problem still persists ; change by other number and look at : </br> [link1](https://bbs.archlinux.org/viewtopic.php?id=221449) </br>[link2](https://bbs.archlinux.org/viewtopic.php?id=272491)  </br> [link3](https://bbs.archlinux.org/viewtopic.php?id=270585) </br> [link4](https://bbs.archlinux.org/viewtopic.php?id=281572) </br> [link5](https://bbs.archlinux.org/viewtopic.php?id=288581) </br>
 
 # Installing modulation dependancies : 
 apt-get install hackrf gnuradio rtl-sdr ffmpeg vlc gr-osmosdr
