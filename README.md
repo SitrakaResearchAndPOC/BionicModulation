@@ -35,6 +35,16 @@ sudo usermod -a G lxd $USER
 ```  
 export PATH=$PATH:/usr/local/bin  
 ```  
+# GETTING BIONIC OS 
+```  
+lxc launch ubuntu:18.04 BionicModulation
+```
+```  
+lxc exec BionicModulation -- bash
+```
+```  
+apt update
+```
 
 
 # INSTALLING MODULATION FM
