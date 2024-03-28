@@ -163,11 +163,14 @@ lxc exec BionicModulation -- firefox
 
 # INSTALLING DEPENDANCIES MODULATIONS
 ```
+lxc exec BionicModulation -- bash
+```
+```
 apt-get install hackrf gnuradio rtl-sdr ffmpeg vlc gr-osmosdr
 ```
 
 # INSTALLING MODULATION FM
-
+(sing : vazo sihanaka sambiavy an'i zoky be leon paul)
 
 
 # INSTALLING OTHER MODULATION
