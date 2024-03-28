@@ -205,8 +205,8 @@ pip3 install "numpy<1.20.0"
 ```
 apt install python3-distutils
 ```
-#pip3 install click
-#https://segmentfault.com/a/1190000040609361
+#pip3 install click </br>
+#https://segmentfault.com/a/1190000040609361 </br>
 ```
 pip3 install "click>7.1.0"
 ```
