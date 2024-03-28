@@ -186,6 +186,10 @@ mkdir FM-Modulation
 cd FM-Modulation
 ```
 Downloads as on the [link](https://github.com/SitrakaResearchAndPOC/FM_Transmitter/tree/main) </br>
+```
+wget https://github.com/SitrakaResearchAndPOC/fork_fm_transmitter/main/FM_Transmitter.zip
+```
+
 
 # INSTALLING CIPHERING AES AND QUANTUM SAFE AES
 ```
