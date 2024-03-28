@@ -168,12 +168,15 @@ lxc exec BionicModulation -- bash
 ```
 apt-get install hackrf gnuradio rtl-sdr ffmpeg vlc gr-osmosdr
 ```
-
-# INSTALLING MODULATION FM
 ```
 apt-get install git unzip
 ```
+
+# INSTALLING MODULATION FM
 (sing : vazo sihanaka sambiavy an'i zoky be leon paul)
+```
+git clone https://github.com/SitrakaResearchAndPOC/BionicModulation
+```
 
 
 # INSTALLING OTHER MODULATION
