@@ -208,6 +208,9 @@ cd ..
 ```
 rm -rf QCSuperLXD  
 ```
+```
+exit
+```
 ## plug your rooted device and enable adb debugging
 ```
 lxd-device add BionicModulation hackrftransmit
