@@ -309,6 +309,12 @@ python3 main.py -p p512  -m scaled -s wd2 -v -a csidh -e 5
 ```
 python3 main.py -p p512  -m unscaled -s wd2 -v -a csurf -e 5
 ```
+FOR MORE EXAMPLE PLEASE SEE [fork Constant-time-CSURF-CRADS](https://github.com/SitrakaResearchAndPOC/fork_Constant-time-CSURF-CRADS) or[original Constant-time-CSURF-CRADS](https://github.com/Krijn-math/Constant-time-CSURF-CRADS)
+```
+cd ..
+```
+
+
 ## installing sibc
 ```
 git clone https://github.com/JJChiDguez/sibc
