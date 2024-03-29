@@ -192,6 +192,9 @@ unzip FM_Transmitter.zip
 ```
 git clone --depth 1 https://github.com/henintsoa98/QCSuperLXD  
 ```
+```
+cd QCSuperLXD
+```
 If it's not run, the fork project is at [fork](https://github.com/SitrakaResearchAndPOC/fork_QCSuperLXD)
 ```
 chmod +x lxd-device lxd-image  
@@ -200,8 +203,30 @@ chmod +x lxd-device lxd-image
 sudo cp lxd-device lxd-image /usr/local/bin
 ```
 ```
+cd ..
+```
+```
 rm -rf QCSuperLXD  
 ```
+## plug your rooted device and enable adb debugging
+```
+lxd-device add BionicModulation hackrftransmit
+```
+## select an number that is your device in the list
+Have a look on this [image](https://github.com/SitrakaResearchAndPOC/QCSuper/blob/main/screen2.jpg)
+
+## run gnuradio 
+```  
+lxc exec BionicModulation -- gnuradio-companion
+```
+
+## configure file source and osmosdr and hackrf on osmosdr: 
+```  
+lxc exec BionicModulation -- hackrf_info
+```
+Just memorize the number serial of hackrf
+
+Change the file source and the osmosdr block
 
 
 # INSTALLING OTHER MODULATION
