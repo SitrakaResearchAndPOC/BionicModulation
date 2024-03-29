@@ -224,6 +224,7 @@ lxc exec BionicModulation -- gnuradio-companion
 ```
 
 ## configure file source and osmosdr and hackrf on osmosdr: 
+Tape CTRL+SHIFT + T for new terminal
 ```  
 lxc exec BionicModulation -- hackrf_info
 ```
