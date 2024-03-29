@@ -177,8 +177,6 @@ apt-get install git unzip
 ```
 git clone https://github.com/SitrakaResearchAndPOC/BionicModulation
 ```
-
-# INSTALLING OTHER MODULATION
 ```
 mkdir FM-Modulation
 ```
@@ -190,6 +188,23 @@ Downloads as on the [link](https://github.com/SitrakaResearchAndPOC/FM_Transmitt
 wget https://media.githubusercontent.com/media/SitrakaResearchAndPOC/fork_fm_transmitter/main/FM_Transmitter.zip
 ```
 
+# PLUG HACKRF AND ADD IT ON THE CONTAINER
+```
+git clone --depth 1 https://github.com/henintsoa98/QCSuperLXD  
+```
+If it's not run, the fork project is at [fork](https://github.com/SitrakaResearchAndPOC/fork_QCSuperLXD)
+```
+chmod +x lxd-device lxd-image  
+```
+```
+sudo cp lxd-device lxd-image /usr/local/bin
+```
+```
+rm -rf QCSuperLXD  
+```
+
+
+# INSTALLING OTHER MODULATION
 
 # INSTALLING CIPHERING AES AND QUANTUM SAFE AES
 ```
