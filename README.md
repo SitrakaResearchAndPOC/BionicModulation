@@ -175,9 +175,6 @@ apt-get install git unzip
 # INSTALLING MODULATION FM
 (sing : vazo sihanaka sambiavy an'i zoky be leon paul)
 ```
-git clone https://github.com/SitrakaResearchAndPOC/BionicModulation
-```
-```
 mkdir FM-Modulation
 ```
 ```
@@ -186,6 +183,9 @@ cd FM-Modulation
 Downloads as on the [link](https://github.com/SitrakaResearchAndPOC/FM_Transmitter/tree/main) </br>
 ```
 wget https://media.githubusercontent.com/media/SitrakaResearchAndPOC/fork_fm_transmitter/main/FM_Transmitter.zip
+```
+```
+unzip FM_Transmitter.zip
 ```
 
 # PLUG HACKRF AND ADD IT ON THE CONTAINER
@@ -205,6 +205,9 @@ rm -rf QCSuperLXD
 
 
 # INSTALLING OTHER MODULATION
+```
+git clone https://github.com/SitrakaResearchAndPOC/BionicModulation
+```
 
 # INSTALLING CIPHERING AES AND QUANTUM SAFE AES
 ```
