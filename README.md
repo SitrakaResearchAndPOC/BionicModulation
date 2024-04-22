@@ -424,3 +424,15 @@ tail f test_fo.txt
 ```
 python3 PQAES.py
 ```
+# For publishing image
+```
+lxc publish HackrfJAM --alias HackrfJAM -f
+```
+Instance published with fingerprint: 3b1b00e67439adbe6d6228dc9fd9e05c1463bbafd64b2e0438bcb499e8274211
+```
+lxc image export HackrfJAM .
+```
+```
+md5sum 3b1b00e67439adbe6d6228dc9fd9e05c1463bbafd64b2e0438bcb499e8274211.tar.gz
+```
+
