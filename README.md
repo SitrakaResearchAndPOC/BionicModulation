@@ -289,14 +289,10 @@ pip3 install Exit
 apt install -y dh-python python3-click python3-progress  python3-numpy python3-matplotlib python3-networkx   python3-stdeb python3-setuptools-scm python3-setuptools python3-cpuinfo
 ```
 ```
-pip3 install dh click numpy progress  networkx stdeb setuptools-scm setuptools
-```
+pip3 install dh click numpy progress matplotlib networkx stdeb setuptools-scm setuptools
 ```
 pip3 install "pillow<5.1.0"
-```
-```
 pip3 install "matplotlib<3.1.1"
-```
 ```
 apt-get install python-all
 ```
@@ -326,8 +322,6 @@ FOR MORE EXAMPLE PLEASE SEE [fork Constant-time-CSURF-CRADS](https://github.com/
 ```
 cd ..
 ```
-
-
 ## installing sibc
 ```
 git clone https://github.com/JJChiDguez/sibc
