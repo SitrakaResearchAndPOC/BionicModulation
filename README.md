@@ -274,7 +274,7 @@ apt install python3-distutils
 pip3 install "click>7.1.0"
 ```
 ```
-pip show click
+pip3 show click
 ```
 ```
 pip3 install progress
