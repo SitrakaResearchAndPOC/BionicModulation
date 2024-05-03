@@ -128,8 +128,9 @@ lsof -U | grep X1
 ```
 chmod +x /tmp/.X11-unix/X0
 ```
+or xhost +local:
 ```
-xhost +local:
+xhost +
 ```
 non-network local connections being added to access control list
 ```
